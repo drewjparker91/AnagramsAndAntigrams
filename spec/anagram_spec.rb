@@ -13,7 +13,7 @@ describe ('AnagramCheck#is_anagram') do
   end
 
   it ('will check if words contains a vowel') do
-    ac = AnagramCheck.new('rr', 'rr')
+    ac = AnagramCheck.new('Ruby', 'Bury')
     expect(ac.is_word()).to(eq(true))
   end
 end
