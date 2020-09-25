@@ -10,11 +10,11 @@ puts "Second word or phrase:"
 input_two = gets.chomp
 ac = AnagramCheck.new(input_one, input_two)
 
-is_word = ac.is_word()
+is_word = ac.are_words()
 anagram = ac.is_anagram()
 antigram = ac.is_antigram()
 
-if is_word
+if are_words
   puts "thats not a real word, you dingus"
 elsif anagram
   puts "#{input_one} and #{input_two} are anagrams of each other"

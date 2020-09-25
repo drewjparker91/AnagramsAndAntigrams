@@ -14,7 +14,7 @@ describe ('AnagramCheck#is_anagram') do
 
   it ('will check if words contains a vowel') do
     ac = AnagramCheck.new('abc', 'cba')
-    expect(ac.is_word()).to(eq(true))
+    expect(ac.are_words()).to(eq(true))
   end
 
   it ('will check if words are antigrams') do
