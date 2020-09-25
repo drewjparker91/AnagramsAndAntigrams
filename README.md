@@ -30,8 +30,9 @@ Account for multiple words being anagrams or "antigrams." Spaces and punctuation
 ## Setup/Installation Requirements
 
 To Extend This Project:
-* Clone this project using the 'git clone' command in terminal.
-* Open the cloned repo in a text editor of your choice.
+* Clone this repository: https://github.com/drewjparker91/AnagramsAndAntigrams.git.
+* Run "bundle" in the terminal to bundle the ruby gems
+* Run "ruby app.rb" in the terminal
 
 ## Known Bugs
 _There are no known bugs at this time._
@@ -40,6 +41,8 @@ _There are no known bugs at this time._
 
 * Ruby
 * Ruby Gems: rspec, pry 
+* Stack Overflow
+* ruby-lang.org/en/documentation
 
 ### License
 
