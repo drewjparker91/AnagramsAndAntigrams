@@ -1,20 +1,25 @@
 class AnagramCheck
+attr_accessor :input_one, :input_two
 
   def initialize (input_one, input_two)
     @input_one = strip_punc_and_space(input_one)
     @input_two = strip_punc_and_space(input_two)
   end
 
+  # def input_one
+  #   @input_one
+  # end
+
+  # def input_two
+  #   @input_two
+  # end
+
   def strip_punc_and_space(user_phrase)
     return user_phrase.downcase.gsub(/[^a-z]/, '')
   end
 
   def is_anagram
-    #user_word_one = @input_one.downcase.gsub(/[^a-z]/, '').chars.sort.join
-    # user_word_two = @input_two.downcase.gsub(/[^a-z]/, '').chars.sort.join
-
     if @input_one.chars.sort.join == @input_two.chars.sort.join
-    # if user_word_one == user_word_two
       return true     
     end
     return false
@@ -30,13 +35,11 @@ class AnagramCheck
     return false
   end
 
-
-
   def are_words
-    if @input_one.match(/[aeiouy]/).length > 0 || @input_two.match(/[aeiouy]/).length > 0
-      return true
+    if !@input_one.match(/[aeiouy]/) || !@input_two.match(/[aeiouy]/)
+      return false
     end
-    return false
+    return true
   end
 
 

@@ -17,6 +17,11 @@ describe ('AnagramCheck#is_anagram') do
     expect(ac.are_words()).to(eq(true))
   end
 
+  it ('will check if words contains a vowel') do
+    ac = AnagramCheck.new('fgh', 'afh')
+    expect(ac.are_words()).to(eq(false))
+  end
+
   it ('will check if words are antigrams') do
     ac = AnagramCheck.new('hey', 'box')
     expect(ac.is_antigram()).to(eq(true))
