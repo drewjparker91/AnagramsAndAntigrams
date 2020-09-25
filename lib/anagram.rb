@@ -21,7 +21,7 @@ class AnagramCheck
     user_word_anti2 = @input_two.downcase.gsub(/[^a-z]/, '').split("")
 
     if user_word_anti - user_word_anti2 === user_word_anti
-      return "your words are antigrams!" 
+      return true
     end
     return false
   end
