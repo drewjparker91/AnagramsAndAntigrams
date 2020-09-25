@@ -34,7 +34,7 @@ describe ('AnagramCheck#is_anagram') do
 
   it ('will check if words are not antigrams') do
     ac = AnagramCheck.new('hey', 'yeh')
-    expect(ac.is_antigram()).to(eq(true))
+    expect(ac.is_antigram()).to(eq(false))
   end
 
   it('will check if phrases are anagrams regardless of punctuation and spaces') do
