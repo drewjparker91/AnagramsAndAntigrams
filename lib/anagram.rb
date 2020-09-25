@@ -33,14 +33,6 @@ class AnagramCheck
     return true
   end
 
-  def try_again
-   response = "y"
-   while (response == "y") do
-    new.AnagramCheck
-    puts "would you like" 
-
-  end
-
 
 end
 
