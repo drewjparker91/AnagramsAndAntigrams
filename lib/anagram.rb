@@ -29,7 +29,7 @@ class AnagramCheck
 
 
   def is_word
-    if @input_one.downcase.match(/[aeiouy]/)
+    if !@input_one.downcase.match(/[aeiouy]/)
       return true
     end
     return false
