@@ -18,7 +18,7 @@ describe ('AnagramCheck#is_anagram') do
   end
 
   it ('will check if words are antigrams') do
-    ac = AnagramCheck.new('hey', 'yeh')
+    ac = AnagramCheck.new('hey', 'box')
     expect(ac.is_antigram()).to(eq("your words are antigrams!"))
   end
   
