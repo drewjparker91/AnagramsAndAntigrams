@@ -4,7 +4,7 @@ require ('rspec')
 describe ('AnagramCheck#anagram') do 
   it ('will check if two words are anagrams') do 
     ac = AnagramCheck.new('ruby', 'bury')
-    expect(ac.anagram_checker()).to(eq(false))
+    expect(ac.anagram_checker()).to(eq(true))
   end
 end
 
