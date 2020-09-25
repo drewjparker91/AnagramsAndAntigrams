@@ -24,7 +24,7 @@ describe ('AnagramCheck#is_anagram') do
 
   it('will check if phrases are anagrams regardless of punctuation and spaces') do
     ac = AnagramCheck.new('!!Ruby DOG  ,,,', '??GoD   bURY')
-    expect(ac.is_anagram()).to(eq(false))
+    expect(ac.is_anagram()).to(eq(true))
   end
 
   
