@@ -13,9 +13,15 @@ describe ('AnagramCheck#is_anagram') do
   end
 
   it ('will check if words contains a vowel') do
-    ac = AnagramCheck.new('Ruby', 'Bury')
+    ac = AnagramCheck.new('abc', 'cba')
     expect(ac.is_word()).to(eq(true))
   end
+
+  it ('will check if words are antigrams') do
+    ac = AnagramCheck.new('hey', 'yeh')
+    expect(ac.is_antigram()).to(eq("your words are antigrams!"))
+  end
+  
 end
 
 # will ignore spaces in inputted phrases 

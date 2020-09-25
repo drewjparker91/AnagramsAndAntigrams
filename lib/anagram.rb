@@ -15,19 +15,26 @@ class AnagramCheck
     return false
   end
 
+  def is_antigram
+    user_word_anti = @input_one.downcase.split("")
+    user_word_anti2 = @input_two.downcase.split("")
+
+    if user_word_anti - user_word_anti2 === user_word_anti
+      return "your words are antigrams!" 
+    end
+    return false
+  end
+
+
+
   def is_word
     if @input_one.downcase.match(/[aeiouy]/)
       return true
     end
     return false
-    # i = 0
-    # while i < @input_one.length
-    #   if (@input_one[i] == "a" || @input_one[i] == "e" || @input_one[i] == "i" || @input_one[i] == "o" || @input_one[i] == "u")
-    #   end
-    #   return true
-    # end
-    # return false 
   end
+
+
 end
 
 
