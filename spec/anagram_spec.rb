@@ -9,7 +9,7 @@ describe ('AnagramCheck#is_anagram') do
 
   it ('will check if false is achieved in a case where two words are not anagrams')do
     ac = AnagramCheck.new('dog', 'fox')
-    expect(ac.is_anagram()).to(eq(true))
+    expect(ac.is_anagram()).to(eq(false))
   end
 
   it ('will check if two words are anagrams regardless of the case they are entered') do
