@@ -6,6 +6,10 @@ describe ('AnagramCheck#anagram') do
     ac = AnagramCheck.new('ruby', 'bury')
     expect(ac.anagram_checker()).to(eq(true))
   end
+
+  it ('will check if two words are anagrams regardless of the case they are entered')
+    ac = AnagramCheck.new('RUbY', 'BuRy')
+    expect(ac.anagram_checker()).to(eq(false))
 end
 
 
