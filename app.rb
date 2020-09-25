@@ -17,9 +17,9 @@ antigram = ac.is_antigram()
 if !are_words
   puts "thats not a real word, you dingus"
 elsif anagram
-  puts "#{ac.input_one} and #{ac.input_two} are anagrams of each other"
+  puts "#{ac.input_one} and #{ac.input_two} are anagrams of each other!"
 elsif antigram
-  puts "#{ac.input_one} and #{ac.input_two} are antigrams of each other"
+  puts "#{ac.input_one} and #{ac.input_two} are antigrams of each other!"
 else 
-  puts "#{ac.input_one} and #{ac.input_two} are neither antigrams or anagrams of each other"
+  puts "#{ac.input_one} and #{ac.input_two} are neither antigrams or anagrams of each other!"
 end

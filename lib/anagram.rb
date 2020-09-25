@@ -1,18 +1,9 @@
 class AnagramCheck
-attr_accessor :input_one, :input_two
-
+  attr_accessor :input_one, :input_two
   def initialize (input_one, input_two)
     @input_one = strip_punc_and_space(input_one)
     @input_two = strip_punc_and_space(input_two)
   end
-
-  # def input_one
-  #   @input_one
-  # end
-
-  # def input_two
-  #   @input_two
-  # end
 
   def strip_punc_and_space(user_phrase)
     return user_phrase.downcase.gsub(/[^a-z]/, '')
@@ -40,6 +31,14 @@ attr_accessor :input_one, :input_two
       return false
     end
     return true
+  end
+
+  def try_again
+   response = "y"
+   while (response == "y") do
+    new.AnagramCheck
+    puts "would you like" 
+
   end
 
 
