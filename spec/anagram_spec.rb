@@ -8,8 +8,13 @@ describe ('AnagramCheck#is_anagram') do
   end
 
   it ('will check if two words are anagrams regardless of the case they are entered') do
-    ac1 = AnagramCheck.new('RUbY', 'BuRy')
-    expect(ac1.is_anagram()).to(eq(false))
+    ac = AnagramCheck.new('RUbY', 'BuRy')
+    expect(ac.is_anagram()).to(eq(true))
+  end
+
+  it ('will check if words contains a vowel') do
+    ac = AnagramCheck.new('rb', 'br')
+    expect(ac.is_word()).to(eq(false))
   end
 end
 
