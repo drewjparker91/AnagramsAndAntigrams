@@ -32,6 +32,11 @@ describe ('AnagramCheck#is_anagram') do
     expect(ac.is_antigram()).to(eq(true))
   end
 
+  it('will check if words are not antigrams') do
+    ac = AnagramCheck.new('ruby', 'bury')
+    expect (ac.is_antigram()).to(eq())
+  end
+
   it('will check if phrases are anagrams regardless of punctuation and spaces') do
     ac = AnagramCheck.new('!!Ruby DOG  ,,,', '??   bURY  GoD')
     expect(ac.is_anagram()).to(eq(true))
