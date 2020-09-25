@@ -1,21 +1,17 @@
 require ('anagram')
 require ('rspec')
 
-describe ('AnagramCheck#anagram') do 
+describe ('AnagramCheck#is_anagram') do 
   it ('will check if two words are anagrams') do 
     ac = AnagramCheck.new('ruby', 'bury')
-    expect(ac.anagram_checker()).to(eq(true))
+    expect(ac.is_anagram()).to(eq(true))
   end
 
-  it ('will check if two words are anagrams regardless of the case they are entered')
-    ac = AnagramCheck.new('RUbY', 'BuRy')
-    expect(ac.anagram_checker()).to(eq(false))
+  it ('will check if two words are anagrams regardless of the case they are entered') do
+    ac1 = AnagramCheck.new('RUbY', 'BuRy')
+    expect(ac1.is_anagram()).to(eq(false))
+  end
 end
-
-
-# will check if two words are not anagrams
-
-# will ignore capital letters while checking whether words are anagrams
 
 # will ignore spaces in inputted phrases 
 
